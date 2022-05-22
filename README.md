@@ -1,2 +1,10 @@
-# Flaskblog
-Soft Technology Application 2022
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>Flaskblog</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+</body>
+</html>
