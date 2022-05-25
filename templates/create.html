@@ -2,11 +2,11 @@
 {% block content %}
     <h1>新規登録</h1>
     <form method="POST">
-        <label for="title">タイトル</label>
-        <input type="text" name="title">
-        <label for="body">内容</label>
-        <input type="text" name="body">
-        <input type="submit" value="新規登録">
+        <p><label for="title">タイトル</label>
+        <input type="text" name="title"></p>
+        <p><label for="body">　内容　</label>
+        <input type="text" name="body"></p>
+        <p><input type="submit" value="新規登録"></p>
     </form>
 
     <a href= "{{url_for('index')}}">戻る</a>

@@ -1,0 +1,11 @@
+{% extends "base.html"%} {% block content %}
+<h1>Flask Blog</h1>
+<article>
+    <h2>閲覧ページ</h2>
+<form method="POST">
+    <p><label for="title">{{post.title}}</label>
+    <p><label for="body">{{post.body}}</label>
+</form>
+<a href="/{{post.id}}/update" role="button">編集</a>
+<a href= "{{url_for('index')}}">戻る</a>
+{% endblock %}

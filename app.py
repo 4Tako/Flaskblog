@@ -61,5 +61,16 @@ def delete(id):
     db.session.commit()
     return redirect("/")
 
+@app.route("/<int:id>/view",methods=["GET","POST"])   #DBのIDがルーティングの部分に持ってこれるように指定する
+def view(id):
+    post=Post.query.get(id)
+    if request.method == "GET":
+        return render_template("view.html",post=post)
+    else:
+        post.title = request.form.get("title")
+        post.body = request.form.get("body")
+        db.session.commit()
+        return redirect("/")
+
 if __name__ == '__main__':
     app.run(debug=True)
